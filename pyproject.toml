@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "granian-app-in-package"
+version = "0.0.0"
+description = ""
+authors = [""]
+
+[tool.poetry.dependencies]
+python = "^3.12.0"
+granian = "==1.1.0"
+
+[tool.black]
+line-length = 88
+skip-string-normalization = false
+target-version = ["py312"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
